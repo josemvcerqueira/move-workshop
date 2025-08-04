@@ -7,6 +7,10 @@ public struct Container<T> has drop {
     value: T,
 }
 
+public struct Container2<phantom T> has drop {
+  
+}
+
 /// Function that creates a new `Container` with a generic value `T`.
 public fun new<T>(value: T): Container<T> {
     Container { value }

@@ -1,6 +1,7 @@
 // Copyright (c) DEFI, LDA
 // SPDX-License-Identifier: Apache-2.0
 
+/// Registry 0x2f65b992f06d249e6423cefc376ff46efc6990fbc6181053233690673601f6d6
 module workshop::lisbon_sui_move;
 
 use std::{string::String};

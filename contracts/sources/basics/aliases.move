@@ -9,7 +9,7 @@ public fun addr(self: &MyStruct): address {
 }
 
 public fun example(self: &MyStruct): address {
-    self.address()
+    self.x()
 }
 
-use fun addr as MyStruct.address;
+use fun addr as MyStruct.x;

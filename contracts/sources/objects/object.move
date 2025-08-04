@@ -10,7 +10,6 @@ public struct Object has key, store {
     id: UID,
 }
 
-
 // === Functions === 
 
 public fun storage_functions(ctx: &mut TxContext) {

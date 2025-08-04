@@ -1,8 +1,10 @@
 module workshop::assert;
+#[error]
+const ENotImplemented: vector<u8> = b"Not implemented";
 
 public fun throw() {
-    assert!(true, 42);
-    assert!(false, 42);
+    assert!(true, ENotImplemented);
+    assert!(false);
 
     abort 10; 
 

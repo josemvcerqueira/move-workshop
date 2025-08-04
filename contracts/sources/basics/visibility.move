@@ -1,4 +1,3 @@
-
 module workshop::visibility;
 
 /// Visible to all.

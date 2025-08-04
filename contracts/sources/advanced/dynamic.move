@@ -6,9 +6,13 @@ use sui::{dynamic_field as df, dynamic_object_field as dof};
 
 // === Constants ===
 
-public struct WeaponSlot() has copy, drop, store;
+public struct WeaponSlot has copy, drop, store {
+
+}
 
 const ACCESSORY_SLOT: vector<u8> = b"accessory";
+
+const WEAPON_SLOT: vector<u8> = b"accessory";
 
 // === Structs ===
 
@@ -43,11 +47,26 @@ public fun hero_example(ctx: &mut TxContext): Hero {
         name: b"Shield".to_string(),
     };
 
-    dof::add(&mut hero.id, WeaponSlot(), weapon);
+    dof::add(&mut hero.id, WeaponSlot {}, weapon);
 
     df::add(&mut hero.id, ACCESSORY_SLOT, accessory);
 
-    hero
+
+    let mut table = Table {
+        id: object::new(ctx)
+    };
+
+    table.add(ACCESSORY_SLOT, 1);
+
+    table.get(ACCESSORY_SLOT);
+
+    let value = &mut table[ACCESSORY_SLOT];
+
+    *value = 2;
+
+    1 + *value;
+
+    abort
 }
 
 // === Make your own Table ===

@@ -45,7 +45,7 @@ public struct CopyStruct has copy, drop {
 
 public fun copy_struct() {
     let s = CopyStruct { a: 1, b: 2 };
-    let _x = copy s;
+    let _x = s;
 }
 
 // === Store ===

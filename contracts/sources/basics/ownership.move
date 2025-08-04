@@ -18,9 +18,11 @@ fun test_owner() {
     let a = new();
     // `u8` is copyable, pass `move a` when calling the function to force the transfer of its ownership
     take_ownership(move a);
+
+    a;
     // a is not valid here 
 
-    let b = &new(); 
+    let b = &mut new(); 
 
     // Cant be moved because it is a reference
     // take_ownership(move b);

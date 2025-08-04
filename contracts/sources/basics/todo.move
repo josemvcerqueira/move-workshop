@@ -1,4 +1,4 @@
-module workshop::todo;
+module workshop::sui_lisbon_todo;
 
 use std::string::String;
 
@@ -28,7 +28,10 @@ public fun remove(self: &mut TodoList, index: u64): String {
 
 /// Delete the list and the capability to manage it.
 public fun delete(self: TodoList) {
-    let TodoList { id, items: _ } = self;
+    let TodoList { id, items } = self;
+
+    assert!(items.length() == 0);
+
     id.delete();
 }
 

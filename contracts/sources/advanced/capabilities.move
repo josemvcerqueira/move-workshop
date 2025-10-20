@@ -1,3 +1,4 @@
+#[allow(unused_const, unused_variable)]
 module workshop::capabilities;
 
 const ADMIN: address = @admin;

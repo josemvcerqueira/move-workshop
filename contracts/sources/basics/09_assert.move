@@ -1,5 +1,6 @@
+#[allow(dead_code)]
 module workshop::assert;
-#[error]
+#[error(code = 0)]
 const ENotImplemented: vector<u8> = b"Not implemented";
 
 public fun throw() {

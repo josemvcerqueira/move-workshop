@@ -1,3 +1,4 @@
+#[allow(unused_variable)]
 module workshop::init;
 
 public struct INIT() has drop;

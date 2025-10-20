@@ -1,3 +1,4 @@
+#[allow(unused_variable, deprecated_usage)]
 module workshop::hello_world;
 
 use std::string::String;

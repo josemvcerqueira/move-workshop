@@ -1,3 +1,4 @@
+#[allow(unused_const)]
 module workshop::dynamic;
 
 use std::string::String;

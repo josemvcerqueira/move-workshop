@@ -1,4 +1,4 @@
-#[allow(unused_assignment)]
+#[allow(unused_assignment, unused_variable)]
 module workshop::func;
 
 public fun nothing(): () {

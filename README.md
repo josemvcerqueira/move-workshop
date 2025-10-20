@@ -13,11 +13,11 @@ sui --version
 
 ## 3 - IDE
 
-I recommend using VSCode with the following extensions:
+I recommend using [VSCode](https://code.visualstudio.com/) with the following extensions:
 
-- Move by Mysten Labs
-- Move Formatter by Mysten Labs
-- Move Syntax by Damirka (Damir Shamanaev)
+- [Move by Mysten Labs](https://marketplace.visualstudio.com/items?itemName=mysten.move)
+- [Move Formatter by Mysten Labs](https://marketplace.visualstudio.com/items?itemName=mysten.prettier-move)
+- [Move Syntax by Damir Shamanaev](https://marketplace.visualstudio.com/items?itemName=damirka.move-syntax)
 
 ### How to get started?!
 
@@ -29,6 +29,7 @@ You should be all set! Let's move!
 
 ### Resources
 
+- [Sui Docs](https://docs.sui.io/guides/developer/getting-started)
 - [Move Book](https://move-book.com/)
 - [IPX](https://github.com/interest-protocol)
 - [Sui Framework](https://github.com/MystenLabs/sui/tree/main/crates/sui-framework/packages)

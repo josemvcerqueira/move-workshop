@@ -1,3 +1,4 @@
+#[allow(unused_function)]
 module workshop::visibility;
 
 /// Visible to all.

@@ -1,8 +1,6 @@
 #[allow(unused_variable)]
 module workshop::vectors;
 
-use std::vector;
-
 public fun vectors() {
     // An empty vector of bool elements.
     let empty: vector<bool> = vector[];

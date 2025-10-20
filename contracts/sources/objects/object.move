@@ -1,3 +1,4 @@
+#[allow(lint(self_transfer))]
 module workshop::object;
 
 // === Structs === 

@@ -1,4 +1,4 @@
-#[allow(unused_variable)]
+#[allow(unused_variable, unused_assignment)]
 module workshop::primitives;
 
 use sui::address;
@@ -14,6 +14,31 @@ public fun primitives() {
     let f: address = @0x1;
 
     _e = false;
+}
+
+public fun operations() {
+    1 + 2;
+    3 - 4;
+    5 * 6;
+    // truncating division
+    7 / 8;
+    9 % 10;
+
+    let sum = {
+        let a = 1;
+        let b = 2;
+        a + b // last expression is the value of the block
+    };
+}
+
+public fun assignment() {
+    let x = 5u8;
+    let y = x as u16;
+    let mut z = x as u32;
+
+    z = 10;
+
+    let v: u64 = 9;
 }
 
 public fun addresses() {

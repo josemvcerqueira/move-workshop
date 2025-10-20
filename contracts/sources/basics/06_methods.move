@@ -1,4 +1,4 @@
-
+#[allow(unused_variable)]
 module workshop::methods;
 
 use workshop::methods;

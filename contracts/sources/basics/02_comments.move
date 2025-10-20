@@ -6,6 +6,8 @@ module workshop::comments;
 This is a multi-line comment
 */
 
+/// This is a doc comment to generate documentation.
+
 /// @dev Add two numbers
 /// @param x The first number
 /// @param y The second number

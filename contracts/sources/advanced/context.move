@@ -1,3 +1,4 @@
+#[allow(unused_variable)]
 module workshop::context;
 
 public fun get_sender(ctx: &mut TxContext) {
